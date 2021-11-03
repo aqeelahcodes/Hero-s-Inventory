@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+
+int main() 
+{
+  string inventory[10];
+
+  cout << "The Heroic Hero Jollyman traveled from Love Lost Land to get to Lovers Village  to find his one and only true Love." << endl;
+  cout << "Jollyman must use his item Key2Heart to unlock his lovers heart and start a new life with her." << endl;
+  cout << "On his way there he has to fight off the Love Sucking Spider Freaks.\n" << endl;
+
+  //cout << "Your items: "
+
+  inventory[0] = "Binoculars";
+  inventory[1] = "Key2Heart";
+  inventory[2] = "StingingSalt";
+
+  cout << "Your items:" << endl;
+  for(int i = 0; i < 3; i++) {
+    cout << "Item " << i + 1 << " is " << inventory[i] << "\n";
+  }
+
+  cout << "Oh nooo here comes the spider freak!" << endl;
+  cout << "Kill spider freak using StingingSalt?" << endl; 
+
+  cout << "Enter Yes: ";
+  string kill;
+  cin >> kill;
+
+  cout << "You have two items left: " << endl;
+
+  //Sorry I did not understand #3 and the idea of using for loop with ""
+  for(int i = 0; i < 3; i++){
+   if(inventory[i] != inventory[2]) {
+      cout << inventory[i] << "\n";
+   }
+  }
+
+  for(int i = 0; i < 2; i++) {
+    if(inventory[i] == inventory[1]) {
+      cout << "You must give up " << inventory[1] << " to the King Spider Freak to cross the bridge and find your true love." << endl;
+    }
+  }
+
+  cout << "No Key2Heart to unlock the heart of Jollyman's one true love." << endl;
+  cout << "In this life Jollyman must travel these lonely roads alone." << endl;
+
+}
