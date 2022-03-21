@@ -1,7 +1,10 @@
 # Hero-s-Inventory
 A mini game I created while attending Butler Community College for Software Development
 
-## About
+## Languages used: 
+C++
+
+## About this project
 Maintains the inventory of a Hero’s in a game represented by an array which is a sequence of string objects one for each items in the Hero's possession. The Hero trades and finds new items
 
 ## Steps: 
